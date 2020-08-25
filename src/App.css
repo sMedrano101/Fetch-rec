@@ -1,0 +1,15 @@
+* {
+  margin-top: 1;
+}
+.App {
+  justify-items: center;
+  text-align: center;
+  background-color: brown;
+}
+
+.bigblue {
+  color: Yellow;
+  padding: 40px;
+  font-family: Arial;
+  text-align: center;
+}
