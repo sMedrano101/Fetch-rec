@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Counter from "./components/Counter";
+import Routes from "./Routes";
 import Card from "./components/Card";
+import { UserProvider } from "./UserContext";
 import "./App.css";
 import Grid from "@material-ui/core/Grid";
 
@@ -57,7 +59,9 @@ export default function App() {
           </Grid>
         ))}
       </Grid>
-      <Counter />
+      <UserProvider>
+        <Counter />
+      </UserProvider>
     </div>
   );
 }
